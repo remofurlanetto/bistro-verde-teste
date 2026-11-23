@@ -78,6 +78,9 @@
     },
     {
       "name": "separator",
+      "variants": [
+        "frieze"
+      ],
       "id": "b88ada5286e8",
       "rows": []
     },
