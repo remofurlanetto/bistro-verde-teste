@@ -100,16 +100,14 @@
     {
       "name": "table",
       "variants": [
+        "striped",
         "menu"
       ],
+      "id": "menu",
       "rows": [
         [
           "source",
           "menu"
-        ],
-        [
-          "filter",
-          "favourite = yes"
         ],
         [
           "columns",
@@ -118,9 +116,12 @@
         [
           "labels",
           "Dish, Description, Price"
+        ],
+        [
+          "filter",
+          "favourite = yes"
         ]
-      ],
-      "id": "menu"
+      ]
     },
     {
       "name": "buttons",
