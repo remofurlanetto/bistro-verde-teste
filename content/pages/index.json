@@ -99,9 +99,6 @@
     },
     {
       "name": "table",
-      "variants": [
-        "menu"
-      ],
       "id": "menu",
       "rows": [
         [
