@@ -6,7 +6,11 @@
     ],
     [
       "description",
-      "Bistro Verde Teste: seasonal cooking, fresh bread and good wine, in the heart of the old town."
+      "Teste do CMS: mudança feita pelo console"
+    ],
+    [
+      "doc_id",
+      "content/pages/index.json"
     ]
   ],
   "layout": [
