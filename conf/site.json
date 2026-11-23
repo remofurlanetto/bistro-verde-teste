@@ -27,6 +27,10 @@
     [
       "default_language",
       "en"
+    ],
+    [
+      "domain",
+      "https://remofurlanetto.github.io/bistro-verde-teste"
     ]
   ],
   "theme": [
