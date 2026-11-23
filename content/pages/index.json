@@ -51,9 +51,7 @@
     },
     {
       "name": "gallery",
-      "variants": [
-        "pair"
-      ],
+      "id": "gallery",
       "rows": [
         [
           {
@@ -73,8 +71,7 @@
             "alt": "Lemon meringue tart"
           }
         ]
-      ],
-      "id": "gallery"
+      ]
     },
     {
       "name": "separator",
