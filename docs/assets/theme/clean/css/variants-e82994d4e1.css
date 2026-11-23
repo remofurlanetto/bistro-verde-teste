@@ -1,0 +1,106 @@
+@layer theme.base {
+/* The starters' variants, on any theme that extends clean: a cover photo hero, colour bands across
+   the whole width, stats and quote cards, a dark footer, a button at the end of the menu. Their
+   colours and fonts are the theme's tokens (color-dark, color-accent, color-surface, font-heading). */
+
+/* nav (last-button): the last item of the menu as a button (book, contact) */
+.nav.last-button .nav__item:last-child .nav__link { background: var(--color-dark); color: #fff; padding: 0.5em 1.1em; border-radius: 999px; }
+
+/* bands: a colour behind a container (its layout's width a band: the colour edge to edge, its content at
+   the page width) or behind one component, in its own box */
+.band-dark, .band-soft, .band-accent {
+  background: var(--band);
+  margin-block: 0 !important;
+  padding-block: clamp(3rem, 2rem + 4vw, 6rem);
+}
+/* a band in a band (a component's in its container's) takes the outer one's colour and room */
+:is(.band-dark, .band-soft, .band-accent) :is(.band-dark, .band-soft, .band-accent) { background: none; padding-block: 0; }
+.band-dark { --band: var(--color-dark); color: #f3efe6; }
+.band-soft { --band: var(--color-surface); }
+.band-accent { --band: var(--color-accent); color: var(--color-dark); }
+.band-dark a:not(.button) { color: inherit; }
+.band-dark .button { background: #f3efe6; color: var(--color-dark); }
+.band-accent .button { background: var(--color-dark); color: #fff; }
+/* a title band runs into the band under it */
+.title.band-soft, .title.band-dark { padding-bottom: 0; }
+
+/* hero (cover): the photo across the whole width, darkened, the text on it */
+main:has(.hero--cover) { padding-top: 0; }
+.hero.hero--cover {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: end;
+  min-height: min(86vh, 48rem);
+  padding-block: var(--space-lg) clamp(3rem, 2rem + 4vw, 6rem);
+  /* its text on the page's reading column, however wide its box (edge to edge in its container) */
+  padding-inline: max(var(--space), calc((100% - var(--max-width)) / 2));
+  color: #fff;
+}
+.hero--cover .hero__media { position: absolute; inset: 0; z-index: -1; }
+.hero--cover .hero__media img { width: 100%; height: 100%; object-fit: cover; border-radius: 0; }
+.hero--cover .hero__media::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, color-mix(in srgb, var(--color-dark) 85%, transparent) 0%, color-mix(in srgb, var(--color-dark) 55%, transparent) 45%, color-mix(in srgb, var(--color-dark) 15%, transparent) 100%); }
+.hero--cover .hero__body { max-width: 38rem; }
+.hero--cover .hero__body p { font-size: 1.15rem; color: rgba(255, 255, 255, 0.85); }
+.hero--cover .button { background: #fff; color: var(--color-dark); }
+
+/* section titles: centered, with room */
+.title.section { text-align: center; text-wrap: balance; margin-block: var(--space-lg) var(--space); }
+
+/* facts (stats): large numbers in cards */
+.facts.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr)); gap: var(--space); margin-block: var(--space-lg); }
+.facts.stats .facts__item { background: var(--color-surface); border-radius: var(--radius); padding: 1.5rem; display: flex; flex-direction: column-reverse; justify-content: flex-end; gap: 0.25rem; }
+.facts.stats .facts__item:first-child { background: var(--color-accent); }
+.facts.stats .facts__value { margin: 0; font-family: var(--font-heading); font-size: clamp(2.2rem, 1.8rem + 1.4vw, 3rem); line-height: 1; }
+.facts.stats .facts__term { text-transform: none; letter-spacing: 0; font-size: 0.95rem; color: var(--color-muted); }
+
+/* cards: soft, with the picture at the top edge */
+.cards__item { background: #fff; border: 0; border-radius: var(--radius); padding: 0 0 1.4rem; overflow: hidden; box-shadow: 0 1px 2px rgba(19, 32, 27, 0.06); }
+.cards__item img { border-radius: 0; aspect-ratio: 4 / 3; }
+.cards__item > :not(img):not(picture) { margin-inline: 1.4rem; }
+.cards__item .button { margin-left: 1.4rem; background: transparent; color: var(--color-primary); padding: 0; border-radius: 0; }
+.cards__item .button::after { content: " →"; }
+
+/* cards (quotes): what clients say, with their photo */
+.cards.quotes .cards__item { padding: 1.6rem; display: grid; grid-template-columns: 3.5rem 1fr; gap: 0.25rem 1rem; align-items: center; }
+.cards.quotes .cards__item img { width: 3.5rem; height: 3.5rem; aspect-ratio: 1; border-radius: 50%; grid-row: 2; }
+.cards.quotes .cards__item > * { margin: 0; }
+.cards.quotes .cards__body { display: contents; }
+.cards.quotes .cards__body > p:first-child { grid-column: 2; grid-row: 2; }
+.cards.quotes .cards__body > p:first-child strong { font-family: var(--font-body); font-size: 1rem; font-weight: 600; }
+.cards.quotes .cards__body > p:last-child { grid-column: 1 / -1; grid-row: 1; font-family: var(--font-heading); font-size: 1.35rem; line-height: 1.4; margin-bottom: 1.2rem; }
+
+/* teaser in a dark band: the text and its picture side by side */
+.teaser.band-dark .teaser__media img { border-radius: var(--radius); }
+.teaser.band-dark .teaser__pretitle { color: var(--color-accent); }
+.teaser__title { font-size: clamp(1.8rem, 1.4rem + 1.6vw, 2.6rem); line-height: 1.12; }
+
+/* the call to action: the title, a line and the button, centered */
+.cta { border-radius: var(--radius); }
+.cta.band-accent, .cta.band-dark { border-radius: 0; flex-direction: column; justify-content: center; text-align: center; gap: 0.5rem; }
+.cta.band-accent > *, .cta.band-dark > * { margin: 0; }
+.cta.band-accent p, .cta.band-dark p { max-width: 36rem; font-size: 1.1rem; }
+.cta.band-accent .button, .cta.band-dark .button { margin-top: 1rem; }
+/* a band at the end of the page runs into the footer */
+main:has(> .row > :last-child > .band-accent, > .row > :last-child > .band-dark) { padding-bottom: 0; }
+.cta.band-accent strong, .cta.band-dark strong { display: block; font-family: var(--font-heading); font-weight: 400; font-size: clamp(1.8rem, 1.4rem + 1.6vw, 2.6rem); line-height: 1.12; margin-bottom: 0.5rem; }
+
+/* accordion: questions as rows */
+.accordion summary { font-family: var(--font-heading); font-size: 1.3rem; padding-block: 1rem; }
+
+/* footer (dark) */
+.fragment-footer.fragment--dark { margin-top: 0; border-top: 0; color: rgba(243, 239, 230, 0.75); background: var(--color-dark); }
+.fragment--dark a { color: #f3efe6; }
+.fragment--dark .columns { margin-block: 0 var(--space-lg); }
+.fragment--dark .columns strong { color: #fff; font-family: var(--font-heading); font-weight: 400; font-size: 1.3rem; }
+
+/* the team, centered under its title */
+.profiles { grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 14rem)); justify-content: center; }
+.profile__name, .profile .name { font-family: var(--font-heading); }
+
+/* image (wide): a photo as wide as its box (a container edge to edge makes it the screen's), not too tall */
+.image.wide img { width: 100%; height: clamp(16rem, 42vw, 34rem); object-fit: cover; border-radius: 0; }
+.image.wide figcaption { text-align: center; }
+
+}

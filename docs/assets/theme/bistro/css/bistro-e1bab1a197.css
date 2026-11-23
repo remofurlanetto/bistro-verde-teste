@@ -1,0 +1,137 @@
+@layer theme.base {
+/* Bistro: an airy, art deco look for restaurants and cafés. White and sage, a gold line work,
+   Marcellus capitals for names and titles, Jost for the rest, everything centered. */
+
+body { font-weight: 300; font-size: 1.05rem; letter-spacing: 0.01em; }
+strong, b { font-weight: 500; }
+h1, h2, h3 { font-weight: 400; letter-spacing: 0.04em; }
+h1 { font-size: clamp(2.1rem, 1.6rem + 2.4vw, 3.4rem); line-height: 1.12; }
+h2 { font-size: clamp(1.6rem, 1.3rem + 1.4vw, 2.4rem); line-height: 1.2; }
+.button { border-radius: 999px; padding: 0.8em 1.7em; font-weight: 500; text-transform: uppercase; letter-spacing: 0.12em; font-size: 0.82rem; background: var(--color-accent); color: var(--color-fg); }
+
+/* small capitals for labels */
+.eyebrow, .nav__link, .cards__body strong, .quote__name, .facts__term, .teaser__pretitle {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+}
+
+/* header: the languages on the left, the name in the middle, the menu and the booking on the right */
+.fragment-header { border: 0; background: var(--color-bg); }
+.fragment-header .site-logo { font-family: var(--font-heading); font-size: 1.45rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--color-dark); font-weight: 400; }
+.fragment-header .nav__link { font-size: 0.78rem; color: var(--color-fg); text-decoration: none; }
+.fragment-header .nav__link[aria-current="page"] { color: var(--color-dark); font-weight: 500; }
+.nav.last-button .nav__item:last-child .nav__link { background: var(--color-accent); color: var(--color-fg); padding: 0.7em 1.4em; }
+@media (min-width: 768px) {
+  .fragment-header > .row { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; }
+  .fragment-header > .row > :first-child { grid-column: 2; grid-row: 1; margin: 0; text-align: center; }
+  .fragment-header > .row > :has(.language-switcher) { grid-column: 1; grid-row: 1; }
+  .fragment-header > .row > :has(.nav) { grid-column: 3; grid-row: 1; justify-self: end; }
+}
+
+/* everything centered: titles, opening paragraphs */
+main .text > h1 { text-align: center; text-transform: uppercase; margin-top: var(--space-lg); }
+main .text > h1 + p { margin-inline: auto; text-align: center; color: var(--color-muted); }
+
+/* hero (panel): the photo on one side, a sage panel with the name in a gold frame on the other */
+main:has(.hero--panel) { padding-top: 0; }
+.hero.hero--panel {
+  padding: 0;
+  gap: 0;
+  grid-template-columns: 1fr;
+  align-items: stretch;
+  background: var(--color-dark);
+  color: #fff;
+}
+.hero--panel .hero__media { position: relative; min-height: 22rem; }
+.hero--panel .hero__media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; border-radius: 0; }
+.hero--panel .hero__body { display: grid; justify-items: center; align-content: center; text-align: center; gap: 1.2rem; padding: clamp(2.5rem, 2rem + 4vw, 6rem) var(--space); }
+.hero--panel h1 {
+  margin: 0;
+  padding: 0.9em 1.3em;
+  border: 1px solid var(--color-accent);
+  outline: 1px solid var(--color-accent);
+  outline-offset: 7px;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: clamp(1.8rem, 1.3rem + 2vw, 2.8rem);
+}
+.hero--panel .hero__body p { max-width: 26rem; margin: 0; letter-spacing: 0.04em; color: rgba(255, 255, 255, 0.88); }
+@media (min-width: 768px) {
+  .hero.hero--panel { grid-template-columns: 3fr 2fr; min-height: min(82vh, 44rem); }
+}
+
+/* separator (frieze): a band of gold diamonds */
+.separator.frieze {
+  height: 16px;
+  border: 0;
+  margin: var(--space-lg) 0;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='16'%3E%3Cg fill='none' stroke='%23d4a548' stroke-width='1'%3E%3Cpath d='M0 8h6M26 8h6'/%3E%3Cpath d='M16 1l7 7-7 7-7-7z'/%3E%3Cpath d='M16 5l3 3-3 3-3-3z'/%3E%3C/g%3E%3C/svg%3E") repeat-x center;
+  opacity: 0.8;
+}
+
+/* lead, and title (statement) as sites made before have it: a sentence in the heading font, under a short gold line */
+.title.statement, .lead { margin-block: var(--space-lg); text-align: center; font-size: clamp(1.35rem, 1.1rem + 1vw, 1.9rem); line-height: 1.45; letter-spacing: 0.02em; }
+.title.statement::before, .lead::before { content: ""; display: block; width: 1px; height: 3.5rem; margin: 0 auto 1.5rem; background: var(--color-accent); }
+/* title (eyebrow): a section's name in small gold capitals */
+.title.eyebrow { text-align: center; font-family: var(--font-body); font-weight: 500; font-size: 0.95rem; color: var(--color-accent); margin: var(--space-lg) 0 var(--space); }
+
+/* gallery (pair): photos two by two, in the middle */
+.gallery.pair { grid-template-columns: repeat(2, 1fr); }
+.gallery.pair img { aspect-ratio: 4 / 3; }
+
+/* table (menu): the dishes in a gold frame, name and price on a line, the description under it */
+.table.menu { margin-block: var(--space) var(--space-lg); padding: 1.5rem clamp(1.25rem, 1rem + 2vw, 2.75rem); border: 1px solid var(--color-accent); outline: 1px solid var(--color-accent); outline-offset: -7px; }
+.table.menu thead { display: none; }
+.table.menu table, .table.menu tbody { display: block; width: 100%; border: 0; }
+.table.menu tr { display: grid; grid-template-columns: 1fr auto; column-gap: var(--space); padding-block: 1rem; border-bottom: 1px solid var(--color-line); background: none !important; }
+.table.menu tr:last-child { border-bottom: 0; }
+.table.menu td { display: block; padding: 0; border: 0; }
+.table.menu td p { margin: 0; }
+.table.menu td:nth-child(1) { font-family: var(--font-heading); font-size: 1.2rem; letter-spacing: 0.04em; }
+.table.menu td:nth-child(2) { grid-row: 2; color: var(--color-muted); font-size: 0.95rem; }
+.table.menu td:nth-child(3) { grid-column: 2; grid-row: 1; font-family: var(--font-heading); font-size: 1.15rem; color: var(--color-dark); }
+
+/* facts (hours): the days on the left and the hours on the right */
+.facts.hours { display: grid; grid-template-columns: 1fr; gap: 0; margin-block: var(--space) var(--space-lg); }
+.facts.hours .facts__item { display: flex; justify-content: space-between; gap: var(--space); padding-block: 0.9rem; border-bottom: 1px solid var(--color-line); }
+.facts.hours .facts__term { font-size: 0.82rem; color: var(--color-fg); }
+.facts.hours .facts__value { margin: 0; font-family: var(--font-heading); text-align: right; }
+
+/* cards: light grey, the photo on top, small capitals and an underlined link */
+.cards__item { background: var(--color-surface); border: 0; border-radius: var(--radius); padding: 0 0 1.5rem; text-align: center; overflow: hidden; }
+.cards__item img { border-radius: 0; aspect-ratio: 4 / 3; }
+.cards__item > :not(img) { margin-inline: 1.25rem; }
+.cards__body strong { display: block; font-size: 0.85rem; color: var(--color-dark); margin-top: 0.5rem; }
+.cards__item .button, .cards.tiles .button { align-self: center; background: none; color: inherit; padding: 0 0 2px; border-radius: 0; border-bottom: 1px solid currentColor; font-size: 0.75rem; }
+
+/* cards (tiles): photos with a caption, on the sage footer */
+.cards.tiles { margin-block: 0 var(--space-lg); }
+.cards.tiles .cards__item { background: rgba(255, 255, 255, 0.06); color: #fff; }
+.cards.tiles .cards__body strong { color: #fff; }
+.cards.tiles .cards__body p:not(:first-child) { display: none; }
+
+/* quote (centered) */
+.quote.centered { text-align: center; }
+.quote.centered .quote__by { justify-content: center; }
+.quote.centered .quote__text { font-size: clamp(1.3rem, 1.1rem + 1vw, 1.8rem); line-height: 1.5; }
+.quote.centered .quote__name { font-size: 0.8rem; color: var(--color-accent); }
+
+/* the band to book, in sage, its button gold */
+.cta.band-dark strong { font-family: var(--font-heading); font-weight: 400; text-transform: uppercase; letter-spacing: 0.1em; }
+.band-dark .button { background: var(--color-accent); color: var(--color-fg); }
+
+/* footer: sage, centered */
+.fragment--dark { text-align: center; }
+.fragment--dark p { margin-inline: auto; font-size: 0.85rem; letter-spacing: 0.04em; }
+
+/* buttons under a menu: in the middle */
+.buttons { justify-content: center; }
+
+/* on a phone: the name on one line, the languages side by side */
+@media (max-width: 767.98px) {
+  .fragment-header .site-logo { font-size: 1.05rem; letter-spacing: 0.16em; white-space: nowrap; }
+  .fragment-header .language-switcher__list { display: flex; gap: 0.5rem; }
+}
+
+}

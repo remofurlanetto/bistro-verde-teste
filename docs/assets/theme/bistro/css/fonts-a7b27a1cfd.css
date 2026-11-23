@@ -1,0 +1,6 @@
+@layer theme.base {
+@font-face { font-family: "Jost"; font-style: normal; font-weight: 300 600; font-display: swap; src: url("../fonts/jost-latin-variable-normal-235d8f8964.woff2") format("woff2"); }
+@font-face { font-family: "Jost"; font-style: italic; font-weight: 300 600; font-display: swap; src: url("../fonts/jost-latin-variable-italic-a3d71240df.woff2") format("woff2"); }
+@font-face { font-family: "Marcellus"; font-style: normal; font-weight: 400; font-display: swap; src: url("../fonts/marcellus-latin-400-normal-be9d4883e7.woff2") format("woff2"); }
+
+}
