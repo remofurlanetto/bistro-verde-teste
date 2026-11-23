@@ -1,0 +1,62 @@
+{
+  "properties": [
+    [
+      "key",
+      "value"
+    ],
+    [
+      "description",
+      "Starters, mains, desserts and drinks at Bistro Verde Teste, with prices."
+    ]
+  ],
+  "layout": [
+    [
+      "component_type",
+      "component_id",
+      "md",
+      "lg",
+      "offset",
+      "width"
+    ],
+    [
+      "table",
+      "menu",
+      "8",
+      "6",
+      "md:2, lg:3",
+      ""
+    ],
+    [
+      "table",
+      "menu-2",
+      "8",
+      "6",
+      "md:2, lg:3",
+      ""
+    ],
+    [
+      "table",
+      "menu-3",
+      "8",
+      "6",
+      "md:2, lg:3",
+      ""
+    ],
+    [
+      "table",
+      "menu-4",
+      "8",
+      "6",
+      "md:2, lg:3",
+      ""
+    ],
+    [
+      "container",
+      "band",
+      "",
+      "",
+      "",
+      "band"
+    ]
+  ]
+}

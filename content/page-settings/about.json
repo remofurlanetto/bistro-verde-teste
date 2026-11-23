@@ -1,0 +1,62 @@
+{
+  "properties": [
+    [
+      "key",
+      "value"
+    ],
+    [
+      "description",
+      "The story of Bistro Verde Teste: our kitchen, our suppliers and our wines."
+    ]
+  ],
+  "layout": [
+    [
+      "component_type",
+      "component_id",
+      "md",
+      "lg",
+      "offset",
+      "width"
+    ],
+    [
+      "container",
+      "wide",
+      "",
+      "",
+      "",
+      "full"
+    ],
+    [
+      "lead",
+      "lead",
+      "8",
+      "",
+      "md:2",
+      ""
+    ],
+    [
+      "gallery",
+      "gallery",
+      "8",
+      "",
+      "md:2",
+      ""
+    ],
+    [
+      "quote",
+      "quote",
+      "8",
+      "",
+      "md:2",
+      ""
+    ],
+    [
+      "container",
+      "band",
+      "",
+      "",
+      "",
+      "band"
+    ]
+  ]
+}

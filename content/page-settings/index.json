@@ -1,0 +1,86 @@
+{
+  "properties": [
+    [
+      "key",
+      "value"
+    ],
+    [
+      "description",
+      "Bistro Verde Teste: seasonal cooking, fresh bread and good wine, in the heart of the old town."
+    ]
+  ],
+  "layout": [
+    [
+      "component_type",
+      "component_id",
+      "md",
+      "lg",
+      "offset",
+      "width"
+    ],
+    [
+      "container",
+      "top",
+      "",
+      "",
+      "",
+      "full"
+    ],
+    [
+      "lead",
+      "lead",
+      "8",
+      "",
+      "md:2",
+      ""
+    ],
+    [
+      "gallery",
+      "gallery",
+      "8",
+      "",
+      "md:2",
+      ""
+    ],
+    [
+      "table",
+      "menu",
+      "8",
+      "6",
+      "md:2, lg:3",
+      ""
+    ],
+    [
+      "container",
+      "wide",
+      "",
+      "",
+      "",
+      "full"
+    ],
+    [
+      "quote",
+      "quote",
+      "8",
+      "",
+      "md:2",
+      ""
+    ],
+    [
+      "facts",
+      "hours",
+      "8",
+      "6",
+      "md:2, lg:3",
+      ""
+    ],
+    [
+      "container",
+      "band",
+      "",
+      "",
+      "",
+      "band"
+    ]
+  ]
+}

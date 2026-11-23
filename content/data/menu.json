@@ -1,0 +1,82 @@
+[
+  {
+    "Name": "Pumpkin soup",
+    "Description": "Roasted pumpkin, ginger, feta and toasted seeds.",
+    "Price": "7.50",
+    "Category": "Starters",
+    "Image": "soup.jpg",
+    "Favourite": ""
+  },
+  {
+    "Name": "Burrata",
+    "Description": "Creamy burrata, tomatoes from the market, basil oil and bread.",
+    "Price": "11.00",
+    "Category": "Starters",
+    "Image": "burrata.jpg",
+    "Favourite": "yes"
+  },
+  {
+    "Name": "Garden salad",
+    "Description": "Leaves, radish, pear and a lemon dressing.",
+    "Price": "8.00",
+    "Category": "Starters",
+    "Image": "",
+    "Favourite": ""
+  },
+  {
+    "Name": "Mushroom risotto",
+    "Description": "Wild mushrooms, aged parmesan and thyme.",
+    "Price": "16.00",
+    "Category": "Mains",
+    "Image": "risotto.jpg",
+    "Favourite": "yes"
+  },
+  {
+    "Name": "Fish of the day",
+    "Description": "Grilled whole, with lemon, new potatoes and green sauce.",
+    "Price": "21.00",
+    "Category": "Mains",
+    "Image": "fish.jpg",
+    "Favourite": "yes"
+  },
+  {
+    "Name": "Roast chicken",
+    "Description": "Half a free-range chicken, garlic and rosemary, with chips.",
+    "Price": "18.00",
+    "Category": "Mains",
+    "Image": "",
+    "Favourite": ""
+  },
+  {
+    "Name": "Lemon meringue tart",
+    "Description": "Sharp lemon curd under a cloud of toasted meringue.",
+    "Price": "7.00",
+    "Category": "Desserts",
+    "Image": "tart.jpg",
+    "Favourite": ""
+  },
+  {
+    "Name": "Chocolate mousse",
+    "Description": "Dark chocolate, sea salt and olive oil.",
+    "Price": "7.00",
+    "Category": "Desserts",
+    "Image": "",
+    "Favourite": ""
+  },
+  {
+    "Name": "House red, glass",
+    "Description": "From a small producer we visit every year.",
+    "Price": "6.00",
+    "Category": "Drinks",
+    "Image": "",
+    "Favourite": ""
+  },
+  {
+    "Name": "Fresh lemonade",
+    "Description": "Lemons, mint and a little honey.",
+    "Price": "4.00",
+    "Category": "Drinks",
+    "Image": "",
+    "Favourite": ""
+  }
+]

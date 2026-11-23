@@ -1,0 +1,205 @@
+{
+  "title": "Menu",
+  "content": [
+    {
+      "name": "main",
+      "rows": [],
+      "id": "e8060f85ca99"
+    },
+    {
+      "h1": "Menu"
+    },
+    {
+      "p": "Our menu changes with the seasons. Ask us about allergies: we are happy to adapt any dish. Prices include taxes."
+    },
+    {
+      "name": "title",
+      "variants": [
+        "2",
+        "eyebrow"
+      ],
+      "rows": [
+        [
+          "Starters"
+        ]
+      ],
+      "id": "9bc2db3476cc"
+    },
+    {
+      "name": "table",
+      "variants": [
+        "menu"
+      ],
+      "rows": [
+        [
+          "source",
+          "menu"
+        ],
+        [
+          "filter",
+          "category = Starters"
+        ],
+        [
+          "columns",
+          "name, description, price"
+        ],
+        [
+          "labels",
+          "Dish, Description, Price"
+        ]
+      ],
+      "id": "menu"
+    },
+    {
+      "name": "title",
+      "variants": [
+        "2",
+        "eyebrow"
+      ],
+      "rows": [
+        [
+          "Mains"
+        ]
+      ],
+      "id": "97b010f9d815"
+    },
+    {
+      "name": "table",
+      "variants": [
+        "menu"
+      ],
+      "rows": [
+        [
+          "source",
+          "menu"
+        ],
+        [
+          "filter",
+          "category = Mains"
+        ],
+        [
+          "columns",
+          "name, description, price"
+        ],
+        [
+          "labels",
+          "Dish, Description, Price"
+        ]
+      ],
+      "id": "menu-2"
+    },
+    {
+      "name": "title",
+      "variants": [
+        "2",
+        "eyebrow"
+      ],
+      "rows": [
+        [
+          "Desserts"
+        ]
+      ],
+      "id": "3b52a9512f27"
+    },
+    {
+      "name": "table",
+      "variants": [
+        "menu"
+      ],
+      "rows": [
+        [
+          "source",
+          "menu"
+        ],
+        [
+          "filter",
+          "category = Desserts"
+        ],
+        [
+          "columns",
+          "name, description, price"
+        ],
+        [
+          "labels",
+          "Dish, Description, Price"
+        ]
+      ],
+      "id": "menu-3"
+    },
+    {
+      "name": "title",
+      "variants": [
+        "2",
+        "eyebrow"
+      ],
+      "rows": [
+        [
+          "Drinks"
+        ]
+      ],
+      "id": "c4b89c4a0dd8"
+    },
+    {
+      "name": "table",
+      "variants": [
+        "menu"
+      ],
+      "rows": [
+        [
+          "source",
+          "menu"
+        ],
+        [
+          "filter",
+          "category = Drinks"
+        ],
+        [
+          "columns",
+          "name, description, price"
+        ],
+        [
+          "labels",
+          "Dish, Description, Price"
+        ]
+      ],
+      "id": "menu-4"
+    },
+    {
+      "name": "container",
+      "variants": [
+        "band-dark"
+      ],
+      "id": "band",
+      "rows": []
+    },
+    {
+      "name": "cta",
+      "variants": [
+        "band-dark"
+      ],
+      "rows": [
+        [
+          {
+            "title": "Book a table",
+            "text": "Call us or send a message. We always keep a few tables for walk-ins."
+          },
+          {
+            "link": "How to find us",
+            "page": "contact"
+          }
+        ]
+      ],
+      "id": "c12bc97611c5"
+    },
+    {
+      "name": "/container",
+      "rows": [],
+      "id": "bd0bd9d0d8ad"
+    },
+    {
+      "name": "/main",
+      "rows": [],
+      "id": "58a0bfeae6bb"
+    }
+  ]
+}

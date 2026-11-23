@@ -1,0 +1,62 @@
+{
+  "title": "footer",
+  "content": [
+    {
+      "name": "cards",
+      "variants": [
+        "tiles"
+      ],
+      "rows": [
+        [
+          {
+            "image": "plating.jpg",
+            "alt": "Our kitchen"
+          },
+          {
+            "title": "Our kitchen",
+            "text": "Our kitchen"
+          },
+          {
+            "link": "Discover",
+            "page": "about"
+          }
+        ],
+        [
+          {
+            "image": "bread.jpg",
+            "alt": "Our menu"
+          },
+          {
+            "title": "Our menu",
+            "text": "Our menu"
+          },
+          {
+            "link": "See the menu",
+            "page": "menu"
+          }
+        ],
+        [
+          {
+            "image": "dining-room.jpg",
+            "alt": "Visit us"
+          },
+          {
+            "title": "Visit us",
+            "text": "Visit us"
+          },
+          {
+            "link": "How to find us",
+            "page": "contact"
+          }
+        ]
+      ],
+      "id": "7bde8f036da3"
+    },
+    {
+      "p": "12 Flower Street, Old Town · +1 555 0100 · hello@example.com"
+    },
+    {
+      "p": "© Bistro Verde Teste. Write your own footer here."
+    }
+  ]
+}

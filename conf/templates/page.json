@@ -1,0 +1,64 @@
+{
+  "template": [
+    [
+      "key",
+      "value"
+    ],
+    [
+      "label",
+      "Page"
+    ]
+  ],
+  "structure": [
+    [
+      "component_id",
+      "component_type",
+      "parent",
+      "editable",
+      "policy",
+      "element",
+      "fragment",
+      "variants"
+    ],
+    [
+      "header",
+      "fragment",
+      "",
+      "",
+      "",
+      "header",
+      "header",
+      ""
+    ],
+    [
+      "main",
+      "container",
+      "",
+      "yes",
+      "",
+      "main",
+      "",
+      ""
+    ],
+    [
+      "footer",
+      "fragment",
+      "",
+      "",
+      "",
+      "footer",
+      "footer",
+      "dark"
+    ]
+  ],
+  "layout": [
+    [
+      "component_id",
+      "width"
+    ],
+    [
+      "footer",
+      "band"
+    ]
+  ]
+}

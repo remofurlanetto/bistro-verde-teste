@@ -1,0 +1,50 @@
+{
+  "title": "header",
+  "content": [
+    {
+      "name": "site-logo",
+      "rows": [],
+      "id": "7f2655c57baf"
+    },
+    {
+      "name": "nav",
+      "variants": [
+        "last-button"
+      ],
+      "rows": [
+        [
+          "order",
+          "manual"
+        ],
+        [
+          "items",
+          {
+            "list": [
+              {
+                "link": "Menu",
+                "page": "menu"
+              },
+              {
+                "link": "About us",
+                "page": "about"
+              },
+              {
+                "link": "Book a table",
+                "page": "contact"
+              }
+            ]
+          }
+        ]
+      ],
+      "id": "8e265ac9a388"
+    },
+    {
+      "name": "language-switcher",
+      "variants": [
+        "short"
+      ],
+      "rows": [],
+      "id": "6dc3836f0394"
+    }
+  ]
+}

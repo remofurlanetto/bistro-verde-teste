@@ -1,0 +1,30 @@
+{
+  "properties": [
+    [
+      "key",
+      "value"
+    ],
+    [
+      "description",
+      "How to find Bistro Verde Teste: address, phone, opening hours and how to book."
+    ]
+  ],
+  "layout": [
+    [
+      "component_type",
+      "component_id",
+      "md",
+      "lg",
+      "offset",
+      "width"
+    ],
+    [
+      "facts",
+      "hours",
+      "8",
+      "6",
+      "md:2, lg:3",
+      ""
+    ]
+  ]
+}

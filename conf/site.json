@@ -1,0 +1,42 @@
+{
+  "site": [
+    [
+      "key",
+      "value"
+    ],
+    [
+      "name",
+      "Bistro Verde Teste"
+    ],
+    [
+      "title_template",
+      "{title} · {site}"
+    ],
+    [
+      "default_og_image",
+      "hero.jpg"
+    ],
+    [
+      "theme",
+      "bistro"
+    ],
+    [
+      "container_mode",
+      "nested"
+    ],
+    [
+      "default_language",
+      "en"
+    ]
+  ],
+  "theme": [
+    [
+      "token",
+      "value"
+    ],
+    [
+      "color-primary",
+      "#a4472a"
+    ]
+  ]
+}
