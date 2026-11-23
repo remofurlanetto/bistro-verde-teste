@@ -99,6 +99,10 @@
     },
     {
       "name": "table",
+      "variants": [
+        "striped",
+        "menu"
+      ],
       "id": "menu",
       "rows": [
         [
